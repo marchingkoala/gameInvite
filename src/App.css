@@ -8,7 +8,6 @@ body {
   background-color: #000;
   color: #f5e3c3;
   font-family: "Cormorant Garamond", serif;
-  overflow: hidden;
 }
 
 /* ✨ Fade in animation for entire screen */
@@ -152,6 +151,7 @@ body {
 .shermz {
   background-image: url("/img/theSherm.jpg");
   margin-top: 20px;
+  min-height: 200px;
   max-height: 600px;
   width: auto;
 }

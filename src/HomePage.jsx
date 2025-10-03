@@ -34,8 +34,7 @@ const styles = {
   width: '100vw',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
-  position: 'relative',
-  overflow: 'hidden',
+  position: 'relative'
   },
   overlay: {
     position: 'absolute',
