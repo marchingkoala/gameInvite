@@ -9,7 +9,7 @@ useEffect(()=>{
     }, [])
 
  return (
-    <div style={styles.container}>
+    <div className='homepage_content' style={styles.container}>
       <div style={styles.overlay} />
       <div style={styles.content}>
         <h1 style={styles.title}>You Have Been Summoned...</h1>
@@ -32,7 +32,6 @@ const styles = {
   container: {
   height: '100vh',
   width: '100vw',
-  backgroundImage: `url("/img/clocktower1copy.jpg")`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   display: 'flex',

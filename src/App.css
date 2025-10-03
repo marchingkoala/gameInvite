@@ -74,6 +74,10 @@ body {
   background-color: black !important;
   transition: background-color 1s ease-in-out;
 }
+
+.homepage_content {
+  background-image: url("/img/clocktower1copy.jpg");
+}
 /* Invite Page Styling — Dark, Witchy, Glowy Red */
 .invite-container {
   height: 100vh;
