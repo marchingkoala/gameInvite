@@ -8,12 +8,10 @@ function App() {
   const [name, setName] = useState("")
 
   return (
-    <Router>
       <Routes>
         <Route path="/" element={<HomePage name={name} setName={setName}/>}/>
         <Route path="/invite" element={<InvitePage name={name} />}/>
       </Routes>
-    </Router>
   )
 }
 
