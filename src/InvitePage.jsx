@@ -17,7 +17,7 @@ return (
         <h2 className="invite-cryptid" onClick={() => setShowSherm(!showSherm)} style={{ cursor: "pointer" }}>
            {showSherm ? "Click to pet away" :  "Say hello to our local Cryptid"}
         </h2>
-        {showSherm && <img src="/img/theSherm.jpg" style={{marginTop: '20px', maxHeight: '600px', width: 'auto'}}/>}
+        {showSherm && <div className="shermz"/>}
       </div>
     </div>
   );
