@@ -9,7 +9,7 @@ useEffect(()=>{
     }, [])
 
  return (
-    <div className="homepage-container">
+    <div style={styles.container}>
       <div style={styles.overlay} />
       <div style={styles.content}>
         <h1 style={styles.title}>You Have Been Summoned...</h1>
@@ -29,6 +29,18 @@ useEffect(()=>{
 }
 
 const styles = {
+  container: {
+  height: '100vh',
+  width: '100vw',
+  backgroundImage: `url("/img/clocktower1copy.jpg")`,
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  position: 'relative',
+  overflow: 'hidden',
+  },
   overlay: {
     position: 'absolute',
     top: 0,
