@@ -150,8 +150,37 @@ body {
 
 .shermz {
   background-image: url("/img/theSherm.jpg");
-  margin-top: 20px;
-  min-height: 200px;
-  max-height: 600px;
-  width: auto;
+    background-size: contain;
+    /* show the full image */
+    background-repeat: no-repeat;
+    /* prevent tiling */
+    background-position: center;
+    /* center the image */
+    margin: 30px auto;
+    width: 90%;
+    /* scale to screen width */
+    max-width: 500px;
+    /* limit for large screens */
+    aspect-ratio: 1 / 1;
+    /* keep proportions */
+    border: 2px solid #8b0000;
+    /* optional gothic border */
+    box-shadow: 0 0 20px crimson;
+    border-radius: 12px;
+    /* soft edges */
+    opacity: 0;
+    /* start invisible */
+    animation: fadeInSherm 1.5s ease-in forwards;
+    /* smooth reveal */
+}
+@keyframes fadeInSherm {
+  0% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
