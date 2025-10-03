@@ -80,7 +80,7 @@ body {
   display: flex;
   justify-content: center;
   /* Align content at top instead of center */
-  align-items: flex-start;
+  align-items: center;
 }
 /* Invite Page Styling — Dark, Witchy, Glowy Red */
 .invite-container {
