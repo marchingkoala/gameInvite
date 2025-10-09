@@ -184,3 +184,63 @@ body {
     transform: scale(1);
   }
 }
+
+.secret-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/img/secretPage.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  /* Align content at top instead of center */
+  align-items: flex-start;
+  position: relative;
+  overflow-y: auto;
+  /* allow vertical scroll */
+  animation: fadeIn 2s ease-in forwards;
+  padding-top: 50px;
+  /* add some top spacing */
+}
+
+.secret-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #f5e3c3;
+  padding: 0 20px;
+  max-width: 800px;
+  /* optional, to prevent super wide content */
+}
+
+.secret-title {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: '#f5e3c3';
+  /* glowy dark red */
+  text-shadow: 0 0 12px crimson, 0 0 25px black;
+  letter-spacing: 1.5px;
+  font-style: italic;
+}
+
+.secret-subtitle {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 1.5rem;
+  color: '#f5e3c3';
+  /* glowy dark red */
+  text-shadow: 0 0 12px crimson, 0 0 25px black;
+  letter-spacing: 1.5px;
+  font-style: italic;
+}
+
+.secret-text {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3rem;
+  color: #f5e3c3;
+  text-shadow: 0 0 8px darkred;
+  margin-bottom: 0.8rem;
+}

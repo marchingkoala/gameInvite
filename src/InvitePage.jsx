@@ -1,10 +1,13 @@
 import React, { useState } from "react";
+import SecretPage from "./Secret";
 
 function InvitePage({name}){
 
 const [showSherm, setShowSherm] = useState(false);
-
-return (
+const signifier = name.toLowerCase();
+return signifier === "kathryn" ? (
+    <SecretPage />
+    ) :(
     <div className="invite-container">
       <div className="invite-overlay" />
       <div className="invite-content">
