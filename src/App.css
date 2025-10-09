@@ -163,9 +163,9 @@ body {
     /* limit for large screens */
     aspect-ratio: 1 / 1;
     /* keep proportions */
-    border: 2px solid #8b0000;
+    /* border: 2px solid #8b0000; */
     /* optional gothic border */
-    box-shadow: 0 0 20px crimson;
+    /* box-shadow: 0 0 20px crimson; */
     border-radius: 12px;
     /* soft edges */
     opacity: 0;

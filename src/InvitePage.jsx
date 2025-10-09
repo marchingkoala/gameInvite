@@ -1,10 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import SecretPage from "./Secret";
 
 function InvitePage({name}){
 
 const [showSherm, setShowSherm] = useState(false);
 const signifier = name.toLowerCase();
+
+useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
+
 return signifier === "kathryn" ? (
     <SecretPage />
     ) :(
@@ -17,6 +23,7 @@ return signifier === "kathryn" ? (
         <p className="invite-subtitle">(we also take drinks and snacks)</p>
         <p className="invite-text"><strong>Date:</strong> October 24, 2025</p>
         <p className="invite-text"><strong>Location: </strong> 297 Montgomery st, unit 3W</p>
+        <p className="invite-text"><strong>Time: </strong> 6:30 PM </p>
         <h2 className="invite-cryptid" onClick={() => setShowSherm(!showSherm)} style={{ cursor: "pointer" }}>
            {showSherm ? "Click to pet away" :  "Say hello to our local Cryptid"}
         </h2>
