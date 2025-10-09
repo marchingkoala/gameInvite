@@ -9,8 +9,7 @@ const signifier = name.toLowerCase();
 useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
-
-
+  
 return signifier === "kathryn" ? (
     <SecretPage />
     ) :(
