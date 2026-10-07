@@ -74,8 +74,49 @@ body {
   transition: background-color 1s ease-in-out;
 }
 
+/* Entrance Screen — black backdrop, envelope invite */
+.entrance-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.entrance-envelope {
+  width: 95vw;
+  height: auto;
+  cursor: pointer;
+  display: block;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.entrance-envelope:hover {
+  transform: scale(1.02);
+  filter: brightness(1.1);
+}
+
+/* Landing Page — the invitation letter, full viewport width */
+.landing-container {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #360204;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: auto;
+}
+
+.landing-letter {
+  width: 100vw;
+  height: auto;
+  display: block;
+}
+
 .homepage_content {
-  background-image: url("/img/clocktower1copy.jpg");
+  background-color: #000;
   display: flex;
   justify-content: center;
   /* Align content at top instead of center */
@@ -85,7 +126,7 @@ body {
 .invite-container {
   height: 100vh;
   width: 100vw;
-  background-image: url("/img/gathering.jpg");
+  background-color: #000;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -149,7 +190,7 @@ body {
 }
 
 .shermz {
-  background-image: url("/img/theSherm.jpg");
+  background-color: #000;
     background-size: contain;
     /* show the full image */
     background-repeat: no-repeat;
@@ -188,7 +229,7 @@ body {
 .secret-container {
   height: 100vh;
   width: 100vw;
-  background-image: url("/img/secretPage.jpg");
+  background-color: #000;
   background-size: cover;
   background-position: center;
   display: flex;
